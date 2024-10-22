@@ -1,7 +1,6 @@
 name: uts_2022130017
 description: "A new Flutter project."
 publish_to: 'none'
-
 version: 1.0.0+1
 
 environment:
@@ -10,13 +9,21 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.2
+  injectable: ^2.4.0
+  get_it: ^7.6.7
+  bloc: ^8.1.4
+  hydrated_bloc: ^9.1.5
+  flutter_bloc: ^8.1.6
+  floor: ^1.5.0
+  sqflite: ^2.4.0
   equatable: ^2.0.5
+  path_provider: ^2.1.4
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+  build_runner: ^2.4.9
 
 flutter:
   uses-material-design: true
