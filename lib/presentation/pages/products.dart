@@ -1,4 +1,5 @@
 import 'package:uts_2022130017/presentation/pages/cart_page.dart';
+import 'package:uts_2022130017/presentation/pages/detail_page.dart';
 import 'package:uts_2022130017/presentation/pages/login.dart';
 import 'package:uts_2022130017/presentation/provider/login/bloc/login_bloc.dart';
 import 'package:uts_2022130017/presentation/provider/product/bloc/product_bloc.dart';
@@ -69,6 +70,15 @@ class ProductsPage extends StatelessWidget {
                     ],
                   ),
                 ),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) =>
+                          ProductDetailPage(product: state.products[index]),
+                    ),
+                  );
+                },
               );
             },
           );
