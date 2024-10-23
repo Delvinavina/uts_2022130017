@@ -18,7 +18,7 @@ class LoginBloc extends HydratedBloc<LoginEvent, LoginState> {
     // Simulating API call
     await Future.delayed(const Duration(seconds: 2));
 
-    if (event.email == 'shop@gmail.com' && event.password == 'password123') {
+    if (event.email == 'neko@neko.com' && event.password == 'password') {
       emit(state.copyWith(
         status: LoginStatus.success,
         isLoggedIn: true,
