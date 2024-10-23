@@ -41,13 +41,16 @@ class _LoginPageState extends State<LoginPage> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Icon(Icons.image, size: 100, color: Colors.grey),
-                  const SizedBox(height: 24),
+                   Image.asset('foto/kucing1.jfif'),
                   const Text(
                     'Welcome to Nekoshop',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 24),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: const Text("Email", style: TextStyle(fontSize: 16)),
+                  ),
                   TextFormField(
                     controller: _emailController,
                     decoration: InputDecoration(
@@ -68,6 +71,10 @@ class _LoginPageState extends State<LoginPage> {
                     },
                   ),
                   const SizedBox(height: 16),
+                   Align(
+                    alignment: Alignment.centerLeft,
+                    child: const Text("Email", style: TextStyle(fontSize: 16)),
+                  ),
                   TextFormField(
                     controller: _passwordController,
                     obscureText: true,
@@ -99,9 +106,13 @@ class _LoginPageState extends State<LoginPage> {
                             );
                       }
                     },
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
-                      minimumSize: const Size(double.infinity, 50),
+                    style: TextButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(255, 4, 47, 82), 
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero,
+                      ),
+                      minimumSize:
+                          Size(double.infinity, 50),
                     ),
                     child: const Text('Login', style: TextStyle(fontSize: 18)),
                   ),
