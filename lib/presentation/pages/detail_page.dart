@@ -17,12 +17,12 @@ class ProductDetailPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-           Align(
-              alignment: Alignment.centerLeft,
-              child: Image.asset(
-                'foto/kucing2.jfif',
-                height: 400,
-                width: 400,
+            Expanded(
+              child: Container(
+                color: Colors.grey[300],
+                child: const Center(
+                  child: Icon(Icons.image, size: 50, color: Colors.grey),
+                ),
               ),
             ),
             Text(product.name,
