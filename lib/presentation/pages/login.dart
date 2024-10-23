@@ -41,7 +41,7 @@ class _LoginPageState extends State<LoginPage> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                   Image.asset('foto/kucing1.jfif'),
+                   Image.asset('foto/kucing2.jfif'),
                   const Text(
                     'Welcome to Nekoshop',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
